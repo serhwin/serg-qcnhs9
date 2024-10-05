@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary-color: #2C3E50;
+  --secondary-color: #E74C3C;
+  --accent-color: #F39C12;
+  --background-color: #ECF0F1;
+  --text-color: #34495E;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.btn-primary {
+  @apply bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition duration-300;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300;
+}
+
+.input-primary {
+  @apply w-full px-4 py-2 rounded-full border-2 border-gray-300 focus:outline-none focus:border-blue-500;
+}
